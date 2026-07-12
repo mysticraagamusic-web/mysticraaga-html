@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mystic Raaga</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+<div id="header-container"></div>
+
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-container').innerHTML = data;
+    });
+</script>
+
+<section class="hero">
+<div class="container" align="left">
+<p>Official About Statement<br />
+Mystic Raaga is a premium spiritual music label dedicated to creating original music inspired by timeless wisdom found in sacred texts and the teachings of enlightened masters from diverse spiritual traditions.<br />
+Every composition is crafted with the intention of bringing listeners closer to inner peace, devotion, self-discovery, and ultimately, self-realization.<br />
+We believe that while paths may differ, the essence of spiritual wisdom is universal—and music is one of its most powerful expressions.</p>
+
+
+<p>Vision<br />
+To become the world's most trusted home for timeless Indian spiritual music.</p>
+
+<p>Mission<br />
+To create original music inspired by timeless spiritual wisdom that helps people experience greater peace, devotion, self-discovery, and self-realization.</p>
+
+<p>Purpose<br />
+Our goal is not merely to entertain.<br />
+Our purpose is to awaken, inspire, and elevate.<br />
+Every song should leave the listener more peaceful, more aware, and a little closer to their true Self than before they pressed play.</p>
+
+<p>Brand Philosophy<br />
+Music is one of humanity's oldest and most powerful spiritual languages.<br />
+Mystic Raaga believes that timeless wisdom exists across many spiritual traditions. When expressed through beautiful music, these teachings become easier to experience, remember, and live.<br />
+Our music is inspired by wisdom—not limited by religious boundaries. While paths may differ, the essence of spiritual truth remains universal.</p>
+
+<p>Core Values<br />
+<ul>
+<li>Authenticity - We create music rooted in genuine spiritual teachings and timeless wisdom.</li>
+<li>Peace - Every composition should create calmness and inner stillness.</li>
+<li>Devotion - Music should inspire humility, gratitude, surrender, and love for the Divine.</li>
+<li>Self-Discovery - Songs should encourage reflection and help listeners understand themselves more deeply.</li>
+<li>Excellence - Every lyric, melody, arrangement, and visual should meet high artistic standards.</li>
+<li>Timelessness - We create music intended to remain meaningful for decades.</li>
+<li>Inclusiveness - We respectfully draw inspiration from diverse spiritual traditions while honoring the authenticity of each.</li>
+</ul>
+</p>
+
+
+</div>
+</section>
+
+<section id="songs" class="container">
+<div id="featured-container"></div>
+<script>
+  fetch('featuredsongs.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('featured-container').innerHTML = data;
+    });
+</script>
+</section>
+
+<div id="footer-container"></div>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+

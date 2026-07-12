@@ -1,0 +1,4 @@
+.platforms{max-width:900px;margin:auto;padding:40px;text-align:center;font-family:Arial}
+.platform-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(60px,1fr));gap:18px;justify-items:center}
+.platform-grid a{width:56px;height:56px;border-radius:14px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.platform-grid img{width:30px;height:30px}
