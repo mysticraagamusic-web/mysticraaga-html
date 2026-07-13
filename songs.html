@@ -1,3 +1,26 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mystic Raaga</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+<div id="header-container"></div>
+
+<script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-container').innerHTML = data;
+    });
+</script>
+
+<section class="hero">
+<div class="container" align="left">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/responsive.css">
 <br />
@@ -22,4 +45,32 @@
 	<img src="images/songs/MR-0006 परस्त्री मातेसमान (Parstri Matesaman)_small.png" /><br />
 		परस्त्री मातेसमान (Parstri Matesaman)</a></cards></div>
 </div>
+</div>
+</section>
+
+<section id="songs" class="container">
+<div id="featured-container"></div>
+<script>
+  fetch('featuredsongs.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('featured-container').innerHTML = data;
+    });
+</script>
+</section>
+
+<div id="footer-container"></div>
+
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-container').innerHTML = data;
+    });
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
 
