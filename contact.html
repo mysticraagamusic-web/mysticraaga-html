@@ -9,15 +9,27 @@
 </head>
 <body>
 
-<div id="header-container"></div>
+<header>
+<div class="container" background="#000">
 
-<script>
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-container').innerHTML = data;
-    });
-</script>
+<table>
+<tr>	<td><img src="images/logo/Logo_small.png" /></td>
+	<td><img src="images/logo/Logo_Title_small.png" /></td>
+</tr>
+<tr>
+	<td></td>
+	<td>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="songs.html">Songs</a>
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+	</td>
+</tr>
+</table>
+</div>
+</header>
 
 <section class="hero">
 <div class="container" align="left">

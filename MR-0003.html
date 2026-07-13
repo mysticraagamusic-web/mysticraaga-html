@@ -33,17 +33,32 @@ body{margin:0;font-family:system-ui,Arial;background:#f8f4ea;color:#24322b}
 pre{white-space:pre-wrap;font:inherit;line-height:1.8}
 footer{background:#17392f;color:#fff;text-align:center;padding:30px}
 </style>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
 </head>
 <body>
-<div id="header-container"></div>
+<header>
+<div class="container" background="#000">
 
-<script>
-  fetch('header.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('header-container').innerHTML = data;
-    });
-</script>
+<table>
+<tr>	<td><img src="images/logo/Logo_small.png" /></td>
+	<td><img src="images/logo/Logo_Title_small.png" /></td>
+</tr>
+<tr>
+	<td></td>
+	<td>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="songs.html">Songs</a>
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+	</td>
+</tr>
+</table>
+</div>
+</header>
 <header class="hero">
 <div class="overlay">
 <h1>મોક્ષમાળા બોલે છે</h1>
